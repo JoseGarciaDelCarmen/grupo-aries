@@ -1,0 +1,62 @@
+footer{
+    background-color: #2F6569;
+    height: auto;
+    width: 100%;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+
+    padding: 5vh 0;
+    margin-top: 20vh;
+
+    .row{
+        margin: 20px 0;
+    }
+    .aries-container-legal-information{
+        a, p{
+            display: inline;
+        }
+    }
+    .aries-container-adress{
+        text-align: left;
+    }
+
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    i{
+        font-size: 20px;
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+//Css para tablets y celulares
+@media (max-width: 768px) {
+    .aries-container-social-media{
+        text-align: center;
+        display: inline-block !important;
+    }
+
+    footer, .aries-container-adress{
+        text-align: center !important;
+    }
+
+    div{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row{
+        margin: 0 0 !important;
+    }
+}

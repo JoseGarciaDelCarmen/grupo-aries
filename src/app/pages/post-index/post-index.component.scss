@@ -1,0 +1,103 @@
+.container{
+
+	h1{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		color: #2F6569;
+		margin-bottom: 50px;
+	}
+
+	.col-md-4{
+		padding-top: 10px !important;
+		padding-right: 20px !important;
+		padding-bottom: 10px !important;
+		padding-left: 0px !important;
+        display: inline-block;
+	}
+
+
+
+	.aries-container-post{
+		background-color: #2F6569;
+		border-radius: 10px;
+
+		padding-top: 25px !important;
+		padding-right: 25px !important;
+		padding-bottom: 25px !important;
+		padding-left: 25px !important;
+
+		margin: 20px 20px;
+
+        .aries-tags{
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+
+		.aries-likes{
+			color: white;
+			font-size: 16px;
+		}
+
+		.aries-email{
+			font-size: 18px;
+		}
+
+        img{
+            border-radius: 10px;
+        }
+
+		.row {
+			--bs-gutter-x: 0;
+			--bs-gutter-y: 0;
+		}
+
+		h6{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			color: #FFFFFF;
+			margin-bottom: 15px;
+		}
+
+		h2{
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			color: #FFFFFF;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		h3{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			color: #FFFFFF;
+		}
+
+		a{
+			color: white;
+			padding: 0px;
+		}
+
+		.mde-row-estado{
+			p{
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				color: #FFFFFF;
+				margin-bottom: 0;
+			}
+		}
+
+		&:hover {
+			transform: scale(1.05);
+			transition: transform .3s;
+		}
+	}
+
+}
+
+

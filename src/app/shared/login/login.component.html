@@ -1,0 +1,66 @@
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-body">
+			<div class="container aries-container-register">
+				<div class="row">
+					<div class="col-md-12">
+			
+						<h1>Ingresa</h1>
+			
+						<form [formGroup]="postForm1" (submit)="submit()">
+							<mat-form-field appearance="outline">
+								<mat-label>Ingresa tu correo electrónico</mat-label>
+								<input matInput autocomplete="off" placeholder="Correo electrónico" formControlName="correo" />
+								<small
+									class="form-text text-muted"
+									*ngIf="postForm1.get('correo').touched && postForm1.get('correo').hasError('required')">
+									Este campo es requerido.
+								</small>
+								<small
+									class="form-text text-muted"
+									*ngIf="postForm1.get('correo').updateOn && postForm1.get('correo').hasError('pattern')">
+									No es un correo valido.
+								</small>
+							</mat-form-field>
+			
+			
+							<mat-form-field appearance="outline">
+								<mat-label>Contraseña</mat-label>
+								<input matInput autocomplete="off" [type]="hide ? 'password' : 'text'" formControlName="contrasena" />
+								<button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+									<mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+								</button>
+								<small
+									class="form-text text-muted"
+									*ngIf="postForm1.get('contrasena').touched && postForm1.get('contrasena').hasError('required')">
+									Este campo es requerido.
+								</small>
+							</mat-form-field>
+							<a role="button">
+								<u>Olvidé mi contraseña</u>
+							</a>
+							<button class="button_direccion" [disabled]="!postForm1.valid ">
+								ENTRAR
+							</button>
+						</form>
+			
+						<div class="col-md-12 text-center mt-5">O por redes sociales</div>
+			
+			
+						<button class="button_direccion">
+							FACEBOOK
+						</button>
+			
+			
+						<button class="button_direccion">
+							GMAIL
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

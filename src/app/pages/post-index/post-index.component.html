@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <h1 class="text-center justify-content-center">
+                Publicaciones
+            </h1>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-left" *ngFor="let post of posts">
+                    <div class="aries-container-post">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="img-fluid w-100" src="{{ post.owner.picture}}" alt="Foto de publicación">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-12" >
+                                <button *ngFor="let tag of post.tags" type="button" class="btn btn-outline-info aries-tags">
+                                    {{ tag }}
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <h2 class="aries-fullName">
+                            {{ post.owner.title | uppercase }} {{ post.owner.firstName | uppercase }} {{ post.owner.lastName | uppercase }}
+                        </h2>
+            
+                        <h6 class="aries-email">
+                            {{ post.owner.email }}
+                        </h6>
+            
+                        <div class="row justify-content-between">
+                            <div class="col-auto mr-auto">
+                                <p class="aries-likes">
+                                    Likes: {{ post.likes }}
+                                </p>
+                            </div>
+
+                            <div class="col-auto">
+                                <a *ngIf="post.link" href=" {{post.link}} ">
+                                    <i class="bi bi-instagram"></i>  
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

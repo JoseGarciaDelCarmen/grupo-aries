@@ -1,0 +1,176 @@
+.modal-dialog {
+    max-width: 40vw;
+    margin: 10vh auto;
+  
+    .close {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      font-size: 4em;
+      z-index: 1;
+    }
+  }
+  
+  //Css para tablets y celulares
+  @media (max-width: 768px) {
+    .modal-dialog {
+      max-width: 80vw;
+    }
+  }
+  
+  
+  //CSS Para el Formulario de Registro
+  .aries-container-register {
+    width: 100%;
+    padding: 5vh 15%;
+    overflow-x: hidden;
+  
+    h1 {
+      font-family: "Montserrat-Regular";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #000000;
+    }
+  
+    mat-form-field {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    mat-label {
+      font-family: "Montserrat-Regular";
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(0, 0, 0, 0.56);
+    }
+  
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+      color: #98989A !important;
+    }
+  
+    mat-checkbox {
+      font-family: "Montserrat-Regular";
+      text-align: left;
+      width: 100%;
+      margin: 10px 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+      color: #000000;
+  
+      p {
+        margin-bottom: 0;
+      }
+  
+      a {
+        text-decoration: underline;
+      }
+    }
+  
+    .button_direccion {
+      display: block;
+      width: 100%;
+      height: 45px;
+      border-radius: 5px;
+      //Aspecto visual del btn
+      border: 1px solid black;
+      color: black;
+      background-color: white;
+      //Texto en el btn
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000000;
+      //Espacio del btn
+      margin: 20px auto 0 auto;
+      text-align: center;
+  
+      //Btn Deshabilitado
+      &:disabled {
+        background-color: #E5E5E5;
+        border: 1px solid #98989A;
+        color: #98989A;
+        cursor: not-allowed;
+      }
+  
+      &:hover:enabled {
+        background-color: #98989A;
+        border: 1px solid #98989A;
+        color: white;
+      }
+    }
+  
+    .width-half {
+      width: 45% !important;
+    }
+  
+    .text-muted {
+      color: #F44336 !important;
+    }
+  
+    .aries-link-no-account {
+      display: block;
+      font-family: "Montserrat-Regular";
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #98989A;
+      margin: 5vh auto 0 auto;
+    }
+  
+    .aries-text-welcome {
+      font-family: "Montserrat-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      color: #98989A;
+      margin: 5vh 0;
+    }
+  
+    .aries-title-welcome {
+      font-family: "Montserrat-Bold";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #000000;
+    }
+  
+    .error {
+      font-family: "Montserrat-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #9F2241;
+      margin-bottom: 0;
+    }
+  
+    .ok {
+      font-family: "Montserrat-Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #98989A;
+      margin-bottom: 0;
+    }
+  }
+  
